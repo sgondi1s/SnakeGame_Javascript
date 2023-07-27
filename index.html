@@ -1,0 +1,66 @@
+<html>
+
+<style>
+    #leftbox {
+            float:left;
+            width:30%;
+			text-align: center;
+            
+        }
+  #game{
+            float:right;
+            width:50%;
+            padding-top: 64px;
+           
+        }
+        #snakeboard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 140px;
+      }
+	  .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<body style="background-color: #87CEFA;">
+
+<div id="leftbox" style="border: 2px solid black">
+
+   
+    <b>SNAKE GAME</b> <br/><br/>
+    Welcome to  Snake Game<br/>
+    <br/>
+    Please enter your  name:  <input type="text" id="namePlayer" value="Swetha"><br/>
+    <br/>
+    <button id="replay" onClick="window.location.reload();" style=" display: none; color: green; margin: 8px;">PLAY AGAIN</button><br/>
+    <b style="align-content: center;">RULES</b><br/>
+    <pre>1. Dont touch the wall
+         2. Move arrow keys to move the snake
+         3. Get 10 points for Each apple
+    </pre>
+
+    <p>
+        <h2> List of Scores</h2>
+        <table class = "center" id="sam" style="border:1px solid black;text-align: center;">    
+        </table></p>
+</div>
+
+
+
+    <div id='game'>
+        <div id="score">0</div>
+    <canvas id="snakeboard" width="400" height="400"></canvas>
+    </div>
+   
+</body>
+    <script src="index.js"></script>
+
+</html>
+
